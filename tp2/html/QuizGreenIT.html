@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html Lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Green IT - Quiz</title>
+    <link rel= "stylesheet" href="../css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <header>
+        <a href="https://www.greenit.fr/">
+            <img src="../IMG/GreenIT.jpg" alt="Logo Green IT" width="200" height="100">
+        </a>
+        <nav>
+            <a href="accueil.html">Accueil</a>
+            <a href="GreenITSiteWeb.html">Green IT & sites Web</a>
+            <a href="QuizGreenIT.html">Quiz Green IT</a>
+            <a href="apropos.html">À propos</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Testez vos connaissances sur la Green IT</h1>
+        
+        <form action="#" method="post">
+            <fieldset>
+                <legend>Vos informations personnelles</legend>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" required>
+                    </div>
+                </div>
+                
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="email">Adresse mail :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="date">Date de naissance :</label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                </div>
+                
+                <div class="input-group">
+                    <label for="statut">Statut :</label>
+                    <select id="statut" name="statut" required>
+                        <option value="">-- Sélectionnez votre statut --</option>
+                        <option value="etudiant">Étudiant</option>
+                        <option value="professionnel">Professionnel</option>
+                        <option value="enseignant">Enseignant</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <ul class="question-list">
+                <li class="question-item">
+                    <span class="question-text">1. Qu'est-ce que la Green IT ?</span>
+                    <ul class="options-list">
+                        <li class="option-item">
+                            <input type="radio" id="q1a" name="q1" value="a" required>
+                            <label for="q1a">Une pratique visant à réduire l'impact environnemental des technologies de l'information</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" id="q1b" name="q1" value="b">
+                            <label for="q1b">Un système de recyclage des anciens ordinateurs</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" id="q1c" name="q1" value="c">
+                            <label for="q1c">Une méthode pour augmenter la consommation énergétique des serveurs</label>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="question-item">
+                    <span class="question-text">1. Quel est l'objetcif principale de la Green IT ?</span>
+                    <ul class="options-list">
+                        <li class="option-item">
+                            <input type="radio" id="q1a1" name="q2" value="a" required>
+                            <label for="q1a">Réduire la consommation d'énergie</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" id="q1b1" name="q2" value="b">
+                            <label for="q1b">Minimiser les déchets électroniques</label>
+                        </li>
+                        <li class="option-item">
+                            <input type="radio" id="q1c1" name="q2" value="c">
+                            <label for="q1c">Optimiser les performances des appareils électroniques</label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <fieldset>
+                <legend>Donnez un exemple de pratique Green IT :</legend>
+                <label for="q3">Votre réponse :</label>
+                <textarea id="q3" name="q3" rows="3" cols="50"></textarea>
+            </fieldset>
+
+            <button type="submit">Soumettre le quiz</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>©2024 Votre Nom.</p>
+        <p>Tous droits réservés.</p>
+        <a href="https://www.greenit.fr/">En savoir plus ?</a>
+    </footer>
+</body>
+</html>
